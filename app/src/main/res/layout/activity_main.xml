@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_card"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:textSize="22sp">
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tax_card"
+        android:layout_width="206dp"
+        android:layout_height="162dp"
+        android:layout_below="@id/main_card"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/tax"
+            android:layout_width="206dp"
+            android:layout_height="162dp"
+            android:background="@drawable/tax_button"
+            android:orientation="vertical"
+            android:textSize="22sp">
+
+            <ImageView
+                android:id="@+id/tax_img"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="top|center_horizontal"
+                android:src="@drawable/tax" />
+
+            <TextView
+                android:id="@+id/tax_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="@string/tax_response"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/land_card"
+        android:layout_width="206dp"
+        android:layout_height="162dp"
+        android:layout_below="@id/main_card"
+        android:layout_toRightOf="@id/tax_card"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/land"
+            android:layout_width="206dp"
+            android:layout_height="162dp"
+            android:background="@drawable/land_button"
+            android:orientation="vertical"
+            android:textSize="22sp">
+
+            <ImageView
+                android:id="@+id/land_img"
+                android:layout_width="154dp"
+                android:layout_height="105dp"
+                android:layout_gravity="top|center_horizontal"
+                android:src="@drawable/land" />
+
+            <TextView
+                android:id="@+id/land_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="@string/land_response"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/construction_card"
+        android:layout_width="206dp"
+        android:layout_height="162dp"
+        android:layout_below="@id/tax_card"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/construction"
+            android:layout_width="206dp"
+            android:layout_height="162dp"
+            android:background="@drawable/construction_button"
+            android:orientation="vertical"
+            android:textSize="22sp">
+
+            <ImageView
+                android:id="@+id/construction_img"
+                android:layout_width="154dp"
+                android:layout_height="105dp"
+                android:layout_gravity="top|center_horizontal"
+                android:src="@drawable/construction" />
+
+            <TextView
+                android:id="@+id/construction_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="@string/construction_response"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/edit_card"
+        android:layout_width="206dp"
+        android:layout_height="162dp"
+        android:layout_below="@id/land_card"
+        android:layout_toRightOf="@id/construction_card"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/edit"
+            android:layout_width="206dp"
+            android:layout_height="162dp"
+            android:background="@drawable/edit_button"
+            android:orientation="vertical"
+            android:textSize="22sp">
+
+            <ImageView
+                android:id="@+id/edit_img"
+                android:layout_width="154dp"
+                android:layout_height="105dp"
+                android:layout_gravity="top|center_horizontal"
+                android:src="@drawable/edit" />
+
+            <TextView
+                android:id="@+id/edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="@string/edit"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mail_card"
+        android:layout_width="206dp"
+        android:layout_height="162dp"
+        android:layout_below="@id/construction_card"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/mail"
+            android:layout_width="206dp"
+            android:layout_height="162dp"
+            android:background="@drawable/mail_button"
+            android:orientation="vertical"
+            android:textSize="22sp">
+
+            <ImageView
+                android:id="@+id/mail_img"
+                android:layout_width="154dp"
+                android:layout_height="105dp"
+                android:layout_gravity="top|center_horizontal"
+                android:src="@drawable/mail" />
+
+            <TextView
+                android:id="@+id/mail_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="@string/mail"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/more_card"
+        android:layout_width="206dp"
+        android:layout_height="162dp"
+        android:layout_below="@id/edit_card"
+        android:layout_toRightOf="@id/mail_card"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/more"
+            android:layout_width="206dp"
+            android:layout_height="162dp"
+            android:background="@drawable/more_button"
+            android:orientation="vertical"
+            android:textSize="22sp">
+
+            <ImageView
+                android:id="@+id/more_img"
+                android:layout_width="154dp"
+                android:layout_height="105dp"
+                android:layout_gravity="top|center_horizontal"
+                android:src="@drawable/more" />
+
+            <TextView
+                android:id="@+id/more_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="@string/more"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
